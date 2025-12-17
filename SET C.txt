@@ -1,0 +1,21 @@
+SET C
+Reverse a string (input box).
+2. Extract 3rd and 4th characters (input box).
+3. Convert UPPER → lower toggle.
+4. Find substring location.
+5. Count special characters in a string.
+6. Find repeated characters in a word (user input).
+7. Create array of numbers and display.
+8. Find last element from array (popup).
+9. Find 10th character from string (popup).
+10. Merge two arrays.
+11. Find max and min from array.
+12. Splice: insert elements at specific index.
+13. and convert to array.
+14. Validate: email format (basic).
+15. Validate: mobile number digits check.
+16. Signup form with submit/reset.
+17. Display submitted data in result section.
+18. Prevent submit if validation fails.
+19. Create person object (name, age, gender).
+20. Display object + loop properties.

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Last Element from Array</title>
+<style>
+    body { font-family: Arial; background: #fff3e0; color: #5d4037; padding: 20px; }
+    h2 { color: #bf360c; }
+    input, button { padding: 5px; margin: 5px 0; width: 300px; }
+    button { background: #d84315; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #bf360c; }
+</style>
+</head>
+<body>
+<h2>8. Find last element from array (popup)</h2>
+<input type="text" id="numbers8" placeholder="Enter numbers separated by commas">
+<button onclick="lastElement()">Show Last Element</button>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+function lastElement() {
+    const numbers = document.getElementById('numbers8').value.split(',').map(Number);
+    if (numbers.length > 0) alert(`Last element: ${numbers[numbers.length - 1]}`);
+    else alert('Array is empty');
+}
+</script>
+</body>
+</html>

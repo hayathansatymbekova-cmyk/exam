@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Submitted Data</title>
+<style>
+body { font-family: Arial; background: #e3f2fd; color: #0d47a1; padding: 20px; }
+h2 { color: #1976d2; }
+input, button { padding: 5px; margin: 5px 0; width: 300px; display: block; }
+button { background: #1976d2; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background: #0d47a1; }
+p { font-weight: bold; white-space: pre-line; }
+</style>
+</head>
+<body>
+<h2>17. Display submitted data in result section</h2>
+
+<form id="form17">
+    <input type="text" id="name17" placeholder="Enter name" required>
+    <input type="email" id="email17" placeholder="Enter email" required>
+    <input type="text" id="mobile17" placeholder="Enter mobile number" required>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+
+<p id="result17"></p>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+document.getElementById('form17').addEventListener('submit', function(e) {
+    e.preventDefault(); // предотвращаем стандартную отправку
+    const name = document.getElementById('name17').value;
+    const email = document.getElementById('email17').value;
+    const mobile = document.getElementById('mobile17').value;
+
+    document.getElementById('result17').innerText = 
+        `Submitted Data:\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}`;
+});
+</script>
+</body>
+</html>

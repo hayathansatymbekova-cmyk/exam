@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate Email</title>
+<style>
+body { font-family: Arial; background: #e8f5e9; color: #1b5e20; padding: 20px; }
+h2 { color: #2e7d32; }
+input, button { padding: 5px; margin: 5px 0; width: 300px; }
+button { background: #388e3c; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background: #1b5e20; }
+p { font-weight: bold; }
+</style>
+</head>
+<body>
+<h2>14. Validate: Email format (basic)</h2>
+<input type="text" id="email14" placeholder="Enter email">
+<button onclick="validateEmail()">Validate Email</button>
+<p id="result14"></p>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+function validateEmail() {
+    const email = document.getElementById('email14').value;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    document.getElementById('result14').innerText = regex.test(email) ? 'Valid Email' : 'Invalid Email';
+}
+</script>
+</body>
+</html>

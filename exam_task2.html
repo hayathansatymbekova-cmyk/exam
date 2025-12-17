@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Extract 3rd and 4th Characters</title>
+<style>
+body { font-family: Arial; padding: 50px; background: #022b27; color: #e8fef8; }
+input, button { padding: 10px; margin: 5px; border-radius: 5px; border: none; }
+button { background: #0d9488; color: white; cursor: pointer; }
+button:hover { background: #14b8a6; }
+</style>
+</head>
+<body>
+<h1>Extract 3rd and 4th Characters</h1>
+<input type="text" id="inputString" placeholder="Enter string">
+<button onclick="extractCharacters()">Extract</button>
+<p id="result"></p>
+
+<script>
+function extractCharacters() {
+    const str = document.getElementById('inputString').value;
+    if (str.length < 4) {
+        document.getElementById('result').innerText = "String too short!";
+        return;
+    }
+    document.getElementById('result').innerText = str[2] + str[3];
+}
+</script>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate Mobile Number</title>
+<style>
+body { font-family: Arial; background: #fce4ec; color: #880e4f; padding: 20px; }
+h2 { color: #ad1457; }
+input, button { padding: 5px; margin: 5px 0; width: 300px; }
+button { background: #c2185b; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background: #880e4f; }
+p { font-weight: bold; }
+</style>
+</head>
+<body>
+<h2>15. Validate: Mobile number digits check</h2>
+<input type="text" id="mobile15" placeholder="Enter mobile number">
+<button onclick="validateMobile()">Validate Number</button>
+<p id="result15"></p>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+function validateMobile() {
+    const mobile = document.getElementById('mobile15').value;
+    const regex = /^\d{10}$/; // 10 digits
+    document.getElementById('result15').innerText = regex.test(mobile) ? 'Valid Mobile Number' : 'Invalid Mobile Number';
+}
+</script>
+</body>
+</html>

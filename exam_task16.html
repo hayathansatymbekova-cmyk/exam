@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup Form</title>
+<style>
+body { font-family: Arial; background: #e3f2fd; color: #0d47a1; padding: 20px; }
+h2 { color: #1976d2; }
+input, button { padding: 5px; margin: 5px 0; width: 300px; display: block; }
+button { background: #1976d2; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background: #0d47a1; }
+p { font-weight: bold; }
+</style>
+</head>
+<body>
+<h2>16. Signup Form</h2>
+<form id="signupForm">
+    <input type="text" id="name16" placeholder="Name" required>
+    <input type="email" id="email16" placeholder="Email" required>
+    <input type="text" id="mobile16" placeholder="Mobile" required>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+<p id="result16"></p>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+document.getElementById('signupForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name16').value;
+    const email = document.getElementById('email16').value;
+    const mobile = document.getElementById('mobile16').value;
+    document.getElementById('result16').innerText = `Submitted Data:\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}`;
+});
+</script>
+</body>
+</html>

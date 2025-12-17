@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Exam – Khayatkhan Satymbekova</title>
+    <meta name="author" content="Khayatkhan Satymbekova">
+    <meta name="description" content="This webpage demonstrates my HTML & CSS skills as part of the exam.">
+
+    <!-- Task 14: Internal CSS -->
+    <style>
+        body { background-color: #013220; color: #e0f2f1; margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
+        h1, h2 { color: #a5d6a7; text-align: center; }
+        p { color: #f0f0f0; }
+        nav { text-align: center; background-color: #014d33; padding: 10px 0; }
+        nav a { margin: 0 15px; text-decoration: none; color: #a5d6a7; font-weight: bold; padding: 5px 10px; border-radius: 5px; }
+        nav a.active, nav a:hover { color: rgb(240,240,240); background-color: #013220; }
+        .hero { background-image: url('images/banner.jpg'); background-size: cover; background-position: center; text-align: center; padding: 100px 20px; color: #fff; }
+        ul li { margin-bottom: 10px; }
+        table { width: 80%; margin: 20px auto; border-collapse: collapse; background-color: #026440; }
+        table, th, td { border: 1px solid #a5d6a7; }
+        th, td { padding: 10px; color: #e0f2f1; text-align: center; }
+        .projects { display: flex; justify-content: space-around; flex-wrap: wrap; }
+        .project { text-align: center; margin-bottom: 20px; }
+        form input, form textarea { width: 80%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #a5d6a7; }
+        form button { padding: 10px 20px; background-color: #026440; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+        form button:hover { background-color: #014d33; }
+        .hover-text:hover { color: #f0a500; transition: color 0.5s; }
+        footer { text-align: center; background-color: #026440; color: #e0f2f1; padding: 15px; font-size: 0.9em; margin-top: 30px; }
+        section { max-width: 900px; margin: 30px auto; padding: 20px; border-radius: 15px; background-color: #014d33; box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+    </style>
+
+</head>
+<body>
+
+    <!-- Task 3: Header -->
+    <header style="background-color:#026440; color:#a5d6a7; padding:40px; text-align:center;">
+        <h1>Khayatkhan Satymbekova</h1>
+        <p>Computer Science Student | Kazakh National Women's Pedagogical University | Kazakhstan</p>
+        <!-- Task 13: Inline CSS applied above (not recommended for big projects) -->
+        <!-- Inline CSS is not recommended because it mixes content with design and is harder to maintain. -->
+    </header>
+
+    <!-- Task 4: Navigation -->
+    <nav>
+        <a href="tasks.html">Tasks</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+        <a href="#quotes">Quotes</a>
+    </nav>
+
+    <!-- Task 5: Hero Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to My Portfolio!</h2>
+        <p>Exploring Web Development, Robotics, and 3D/AR/VR Technologies</p>
+    </section>
+
+    <!-- Task 6: About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is <strong>Khayatkhan Satymbekova</strong>, a student passionate about <em>informatics</em> and teaching children. I enjoy <strong>robotics</strong>, <strong>3D modeling</strong>, and <em>AR/VR technologies</em>.</p>
+    </section>
+
+    <!-- Task 7: Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming: Python, C++, Scratch</li>
+            <li>Robotics: Wedo, EV3, Lego Spike Prime</li>
+            <li>Software: MS Office, Adobe Photoshop</li>
+            <li>3D Modeling & Printing, AR & VR Tools</li>
+        </ul>
+    </section>
+
+    <!-- Task 8 & 18: Certifications Table -->
+    <section id="certifications">
+        <h2>Certifications & Achievements</h2>
+        <table>
+            <caption>My Professional Certifications</caption>
+            <thead>
+                <tr>
+                    <th>Certificate</th>
+                    <th>Platform</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Programming Foundations</td>
+                    <td>Coursera</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td>Another Platform</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td>Robotics Teaching</td>
+                    <td>EV3 Academy</td>
+                    <td>2024</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Task 9: Portfolio -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <div class="project">
+                              <p>Robotics Workshop Project</p>
+            </div>
+            <div class="project">
+                              <p>AR Historical Timeline</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 10: External Links -->
+    <section id="resources">
+        <h2>Useful Resources</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Documentation (MDN)</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS Documentation (MDN)</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools Tutorials</a></li>
+        </ul>
+    </section>
+
+    <!-- Task 11: Contact Form -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Task 17: Quotation -->
+    <section id="quotes">
+        <h2>Quotes</h2>
+        <blockquote cite="https://www.w3.org/">
+            "The web does not just connect machines, it connects people." - W3C
+        </blockquote>
+        <p>Inline quote example: <q>Learning HTML & CSS is fun!</q></p>
+    </section>
+
+
+
+
+    <!-- Task 20: Creative Enhancement -->
+    <section>
+        <h2>Creative Feature</h2>
+        <p class="hover-text">Hover over me to see a color change!</p>
+    </section>
+
+    <!-- Task 12: Footer -->
+    <footer>
+        <p>Khayatkhan Satymbekova | hayasatymbekova@gmail.com | &copy; 2025</p>
+    </footer>
+  
+<p> Reflection:
+During this HTML & CSS exam project, I learned how to build a full-featured webpage that includes headers, navigation, hero sections, multiple content sections, tables, forms, and interactive elements. 
+I practiced internal CSS styling, inline CSS usage, and applying hover effects. 
+This project helped me understand how to structure content logically, present information clearly, and enhance user experience with design and interactive features.
+</p>
+</body>
+</html>
