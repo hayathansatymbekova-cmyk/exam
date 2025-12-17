@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Substring Location</title>
+</head>
+<body>
+<h2>Find substring location</h2>
+<input type="text" id="text" placeholder="Enter text">
+<input type="text" id="substr" placeholder="Enter substring">
+<button onclick="findSubstring()">Find Location</button>
+<p id="result"></p>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+function findSubstring() {
+    const text = document.getElementById('text').value;
+    const substr = document.getElementById('substr').value;
+    const index = text.indexOf(substr);
+    document.getElementById('result').innerText = index >= 0 ? `Substring found at index: ${index}` : 'Substring not found';
+}
+</script>
+</body>
+</html>

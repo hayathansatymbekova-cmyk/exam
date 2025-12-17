@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10th Character from String</title>
+<style>
+    body { font-family: Arial; background: #e8f5e9; color: #1b5e20; padding: 20px; }
+    h2 { color: #2e7d32; }
+    input, button { padding: 5px; margin: 5px 0; width: 300px; }
+    button { background: #388e3c; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #1b5e20; }
+</style>
+</head>
+<body>
+<h2>9. Find 10th character from string (popup)</h2>
+<input type="text" id="text9" placeholder="Enter a string">
+<button onclick="tenthCharacter()">Show 10th Character</button>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+function tenthCharacter() {
+    const text = document.getElementById('text9').value;
+    if (text.length >= 10) alert(`10th character: ${text[9]}`);
+    else alert('String has less than 10 characters');
+}
+</script>
+</body>
+</html>

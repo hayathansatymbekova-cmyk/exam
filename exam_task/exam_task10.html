@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merge Two Arrays</title>
+<style>
+    body { font-family: Arial; background: #f3e5f5; color: #4a148c; padding: 20px; }
+    h2 { color: #6a1b9a; }
+    input, button { padding: 5px; margin: 5px 0; width: 300px; }
+    button { background: #8e24aa; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #6a1b9a; }
+    p { font-weight: bold; }
+</style>
+</head>
+<body>
+<h2>10. Merge two arrays</h2>
+<input type="text" id="array10a" placeholder="Enter first array (comma separated)">
+<input type="text" id="array10b" placeholder="Enter second array (comma separated)">
+<button onclick="mergeArrays()">Merge Arrays</button>
+<p id="result10"></p>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+function mergeArrays() {
+    const arr1 = document.getElementById('array10a').value.split(',');
+    const arr2 = document.getElementById('array10b').value.split(',');
+    const merged = arr1.concat(arr2);
+    document.getElementById('result10').innerText = `Merged Array: [${merged.join(', ')}]`;
+}
+</script>
+</body>
+</html>

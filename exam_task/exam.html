@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Tasks</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #022b27, #0d9488);
+    color: #e8fef8;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #14b8a6;
+}
+
+.tasks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tasks-container button {
+    background-color: #0d9488;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.tasks-container button:hover {
+    background-color: #14b8a6;
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+
+<h1>Exam Tasks</h1>
+
+<div class="tasks-container">
+    <!-- Генерация 20 кнопок -->
+    <button onclick="openTask(1)">Task 1</button>
+    <button onclick="openTask(2)">Task 2</button>
+    <button onclick="openTask(3)">Task 3</button>
+    <button onclick="openTask(4)">Task 4</button>
+    <button onclick="openTask(5)">Task 5</button>
+    <button onclick="openTask(6)">Task 6</button>
+    <button onclick="openTask(7)">Task 7</button>
+    <button onclick="openTask(8)">Task 8</button>
+    <button onclick="openTask(9)">Task 9</button>
+    <button onclick="openTask(10)">Task 10</button>
+    <button onclick="openTask(11)">Task 11</button>
+    <button onclick="openTask(12)">Task 12</button>
+    <button onclick="openTask(13)">Task 13</button>
+    <button onclick="openTask(14)">Task 14</button>
+    <button onclick="openTask(15)">Task 15</button>
+    <button onclick="openTask(16)">Task 16</button>
+    <button onclick="openTask(17)">Task 17</button>
+    <button onclick="openTask(18)">Task 18</button>
+    <button onclick="openTask(19)">Task 19</button>
+    <button onclick="openTask(20)">Task 20</button>
+</div>
+
+<script>
+function openTask(taskNumber) {
+    // Переход на файл с именем exam_taskX.html
+    window.location.href = `exam_task${taskNumber}.html`;
+}
+</script>
+<button onclick="window.location.href='index.html'">Home page</button>
+
+</body>
+</html>

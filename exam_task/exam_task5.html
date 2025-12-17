@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Count Special Characters</title>
+</head>
+<body>
+<h2>Count special characters in a string</h2>
+<input type="text" id="text" placeholder="Enter text">
+<button onclick="countSpecialChars()">Count Special Characters</button>
+<p id="result"></p>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+function countSpecialChars() {
+    const text = document.getElementById('text').value;
+    const specialChars = text.match(/[^a-zA-Z0-9\s]/g);
+    document.getElementById('result').innerText = `Special characters count: ${specialChars ? specialChars.length : 0}`;
+}
+</script>
+</body>
+</html>

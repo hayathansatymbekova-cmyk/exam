@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Max and Min from Array</title>
+<style>
+    body { font-family: Arial; background: #fff3e0; color: #e65100; padding: 20px; }
+    h2 { color: #ef6c00; }
+    input, button { padding: 5px; margin: 5px 0; width: 300px; }
+    button { background: #f57c00; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #e65100; }
+    p { font-weight: bold; }
+</style>
+</head>
+<body>
+<h2>11. Find max and min from array</h2>
+<input type="text" id="numbers11" placeholder="Enter numbers separated by commas">
+<button onclick="findMaxMin()">Find Max & Min</button>
+<p id="result11"></p>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+function findMaxMin() {
+    const numbers = document.getElementById('numbers11').value.split(',').map(Number);
+    if (numbers.length > 0) {
+        const max = Math.max(...numbers);
+        const min = Math.min(...numbers);
+        document.getElementById('result11').innerText = `Max: ${max}, Min: ${min}`;
+    } else {
+        document.getElementById('result11').innerText = 'Array is empty';
+    }
+}
+</script>
+</body>
+</html>

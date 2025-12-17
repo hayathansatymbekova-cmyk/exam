@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Repeated Characters</title>
+</head>
+<body>
+<h2>Find repeated characters in a word</h2>
+<input type="text" id="text" placeholder="Enter word">
+<button onclick="findRepeatedChars()">Find Repeats</button>
+<p id="result"></p>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+function findRepeatedChars() {
+    const text = document.getElementById('text').value;
+    const repeats = [...text].filter((char, i, arr) => arr.indexOf(char) !== i);
+    const uniqueRepeats = [...new Set(repeats)];
+    document.getElementById('result').innerText = uniqueRepeats.length > 0 ? `Repeated characters: ${uniqueRepeats.join(', ')}` : 'No repeated characters';
+}
+</script>
+</body>
+</html>

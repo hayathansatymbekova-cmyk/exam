@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convert to Array</title>
+<style>
+body { font-family: Arial; background: #fff3e0; color: #e65100; padding: 20px; }
+h2 { color: #f57c00; }
+input, button { padding: 5px; margin: 5px 0; width: 300px; }
+button { background: #f57c00; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background: #e65100; }
+p { font-weight: bold; }
+</style>
+</head>
+<body>
+<h2>13. Convert string to array</h2>
+<input type="text" id="text13" placeholder="Enter string (comma separated)">
+<button onclick="convertToArray()">Convert</button>
+<p id="result13"></p>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+function convertToArray() {
+    const str = document.getElementById('text13').value;
+    const arr = str.split(',');
+    document.getElementById('result13').innerText = `Array: [${arr.join(', ')}]`;
+}
+</script>
+</body>
+</html>

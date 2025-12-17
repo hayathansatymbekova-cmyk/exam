@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Case</title>
+<style>
+body { font-family: Arial; padding: 50px; background: #022b27; color: #e8fef8; }
+input, button { padding: 10px; margin: 5px; border-radius: 5px; border: none; }
+button { background: #0d9488; color: white; cursor: pointer; }
+button:hover { background: #14b8a6; }
+</style>
+</head>
+<body>
+<h1>Convert UPPER ↔ lower</h1>
+<input type="text" id="inputString" placeholder="Enter string">
+<button onclick="toggleCase()">Toggle Case</button>
+<p id="result"></p>
+<br>
+<button onclick="window.location.href='exam.html'">Tasks_page</button>
+
+<script>
+function toggleCase() {
+    const str = document.getElementById('inputString').value;
+    let toggled = '';
+    for (let char of str) {
+        toggled += char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase();
+    }
+    document.getElementById('result').innerText = toggled;
+}
+</script>
+</body>
+</html>

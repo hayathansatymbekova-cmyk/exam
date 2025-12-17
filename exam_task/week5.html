@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #f4c542;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f1c9;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #ffeeba;
+            transition: background-color 0.3s;
+        }
+
+        /* Tooltip */
+        td[data-tooltip]:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            background: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            transform: translateY(-150%);
+            font-size: 0.9em;
+        }
+
+        /* Mobile responsiveness: show two columns instead of full table */
+        @media screen and (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                margin-bottom: 15px;
+                border: 1px solid #f4c542;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #fff8dc;
+            }
+
+            td {
+                border: none;
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 10px;
+            }
+
+            td::before {
+                content: attr(data-label);
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Student List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Число</th>
+                <th>Полное имя</th>
+                <th>Курс</th>
+                <th>Студенческий билет</th>
+                <th>Год</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Число">1</td>
+                <td data-label="Полное имя" data-tooltip="Введите полное имя студента"> </td>
+                <td data-label="Курс"></td>
+                <td data-label="Студенческий билет"></td>
+                <td data-label="Год"></td>
+            </tr>
+            <tr>
+                <td data-label="Число">2</td>
+                <td data-label="Полное имя" data-tooltip="Введите полное имя студента"> </td>
+                <td data-label="Курс"></td>
+                <td data-label="Студенческий билет"></td>
+                <td data-label="Год"></td>
+            </tr>
+            <tr>
+                <td data-label="Число">3</td>
+                <td data-label="Полное имя" data-tooltip="Введите полное имя студента"></td>
+                <td data-label="Курс"></td>
+                <td data-label="Студенческий билет"></td>
+                <td data-label="Год"></td>
+            </tr>
+            <tr>
+                <td data-label="Число">4</td>
+                <td data-label="Полное имя" data-tooltip="Введите полное имя студента"></td>
+                <td data-label="Курс"></td>
+                <td data-label="Студенческий билет"></td>
+                <td data-label="Год"></td>
+            </tr>
+            <tr>
+                <td data-label="Число">5</td>
+                <td data-label="Полное имя" data-tooltip="Введите полное имя студента"></td>
+                <td data-label="Курс"></td>
+                <td data-label="Студенческий билет"></td>
+                <td data-label="Год"></td>
+            </tr>
+        </tbody>
+    </table>
+<p>
+Reflection:
+While creating this student table, I learned how to structure data in HTML tables and style them using CSS. 
+I practiced adding hover effects, tooltips, and alternating row colors to improve readability. 
+I also implemented responsive design using media queries so that the table looks good on mobile devices. 
+This task helped me understand how to combine HTML and CSS effectively for both functionality and aesthetics.
+</p>
+</body>
+</html>
